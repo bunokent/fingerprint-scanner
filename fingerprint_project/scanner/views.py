@@ -46,8 +46,8 @@ def capture_fingerprint(request):
 
     if capture:
         tmp, img_bytes = capture  # <-- TEMPLATE + IMAGE BYTES
-
-        # ---- TEMPLATE (TMP) TO BASE64 (IMPORTANT) ----
+        
+        # TEMPLATE (TMP) TO BASE64 (IMPORTANT) 
         template_base64 = base64.b64encode(bytes(tmp)).decode("utf-8")
 
         # ---- IMAGE PROCESSING ----
